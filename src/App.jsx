@@ -11,7 +11,7 @@ function App() {
       <section>
         <Blog />
       </section>
-      <section className="bg-specialWhite">
+      <section className="bg-specialWhite p-5">
         <FooterAuthorSection />
       </section>
       {/* <section>Recommendation by Aurelius</section> */}

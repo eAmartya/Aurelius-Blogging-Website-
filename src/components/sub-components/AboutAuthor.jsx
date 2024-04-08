@@ -12,7 +12,7 @@ export default function AboutAuthor() {
   };
   return (
     <>
-      <div className="p-5">
+      <div className="">
         <div className="flex justify-between mt-8 mb-5">
           <div className="w-16 h-16">
             <RoundedImg src={data.authorImg}></RoundedImg>
@@ -34,7 +34,7 @@ export default function AboutAuthor() {
             <span className="text-specialGrey"> Writer for</span>{" "}
             <span className="text-specialBlack">Corporate Underbelly</span>
           </div>
-          <div className="text-[14px] mt-5">
+          <div className="text-[14px] mt-4">
             Believer, Baltimore City IEP Chair, and 2:39 marathon runner.
             Diehard fan of “The Wire.” Support me by becoming a Medium member:{" "}
             <span className="underline">https://bit.ly/39Cybb8</span>
