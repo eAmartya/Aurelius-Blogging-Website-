@@ -1,25 +1,61 @@
 import ArticleCard from "./ArticleCard";
 
 export default function MoreFromAuthor() {
-  let data = {
-    img: "https://www.pexels.com/photo/sunlit-rocks-on-sea-shore-16039120/",
-    authorImg: "#",
-    authorName: "Ryan Fan",
-    heading: "Invisible Illness",
-    title: "The Embrace of Sports Gambling Has Gone Too Far",
-    brief:
-      "Why young men, like myself, are particularly susceptible to sports gambling addiction",
-    read: "7 mins",
-    date: "Mar 13, 2024",
-  };
+  let data = [
+    {
+      authorImg:
+        "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      articleImg:
+        "https://miro.medium.com/v2/resize:fit:720/format:webp/0*axOYB0WNLkM2gS0q",
+      authorName: "Ryan Fan",
+      heading: "Invisible Illness",
+      title: "The Embrace of Sports Gambling Has Gone Too Far",
+      brief:
+        "Why young men, like myself, are particularly susceptible to sports gambling addiction.",
+      memberOnly: false,
+      read: "7 min",
+      date: "Mar 13, 2024",
+    },
+    {
+      authorImg:
+        "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      articleImg:
+        "https://miro.medium.com/v2/resize:fit:720/format:webp/0*axOYB0WNLkM2gS0q",
+      authorName: "Ryan Fan",
+      heading: "Invisible Illness",
+      title: "The Embrace of Sports Gambling Has Gone Too Far",
+      brief:
+        "Why young men, like myself, are particularly susceptible to sports gambling addiction.",
+      memberOnly: false,
+      read: "7 min",
+      date: "Mar 13, 2024",
+    },
+    {
+      authorImg:
+        "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      articleImg:
+        "https://miro.medium.com/v2/resize:fit:720/format:webp/0*axOYB0WNLkM2gS0q",
+      authorName: "Ryan Fan",
+      heading: "Invisible Illness",
+      title: "The Embrace of Sports Gambling Has Gone Too Far",
+      brief:
+        "Why young men, like myself, are particularly susceptible to sports gambling addiction.",
+      memberOnly: false,
+      read: "7 min",
+      date: "Mar 13, 2024",
+    },
+  ];
   return (
     <>
-      <div>
-        <p className="text-specialBlack text-[16px] font-semibold">
+      <div className="">
+        <p className="text-specialBlack text-[16px] font-bold my-8">
           More from Ryan Fan and Corporate Underbelly
         </p>
         <div>
-          <ArticleCard />
+          {data.map((el) => {
+            return <ArticleCard data={el} />;
+          })}
+          {/* <ArticleCard data={data} /> */}
         </div>
       </div>
     </>
