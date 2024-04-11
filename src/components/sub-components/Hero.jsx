@@ -19,7 +19,7 @@ export default function Hero() {
           — CC BY 4.0
         </figcaption>
       </figure>
-      <div className="text-[17px] text-specialBlack font-normal helvetica my-5">
+      <div className="text-[17px] text-specialBlack font-normal helvetica my-5 px-1 text-justify">
         {data.content}
       </div>
     </>

@@ -14,7 +14,7 @@ export default function Author() {
   return (
     <>
       <div className="flex gap-3 items-center">
-        <div className="w-11 h-11">
+        <div className="w-11 h-11 sm:w-13 sm:h-13">
           {/* <img src={authorImg} alt="" className="h-11 rounded-full" /> */}
           <RoundedImg
             src={
@@ -23,21 +23,23 @@ export default function Author() {
           ></RoundedImg>
         </div>
         <div>
-          <div className="flex gap-2 items-center">
-            {data.authorName} <span className="flex items-center ">.</span>{" "}
-            <NoBGButton>Follow</NoBGButton>
+          <div className="flex gap-2 items-center ">
+            {data.authorName} <span>.</span> <NoBGButton>Follow</NoBGButton>
           </div>
-          <div>
-            <span className="text-gray-600 text-[14px]">Published in</span>{" "}
-            <span>.</span>{" "}
-            <span className="text-specialBlack text-[14px]">
-              {data.publishedIn}
-            </span>
-          </div>
-          <div className="flex gap-2">
-            <span className="text-gray-600 text-[14px]">{data.read} read</span>
-            <span>.</span>
-            <span className="text-[14px] text-specialGrey">{data.date}</span>
+          <div className="sm:flex sm:gap-4">
+            <div>
+              <span className="text-gray-600 text-[14px]">Published in</span>{" "}
+              <span className="text-specialBlack text-[14px]">
+                {data.publishedIn}
+              </span>
+            </div>
+            <div className="flex gap-2">
+              <span className="text-gray-600 text-[14px]">
+                {data.read} read
+              </span>
+              <span>.</span>
+              <span className="text-[14px] text-specialGrey">{data.date}</span>
+            </div>
           </div>
         </div>
       </div>

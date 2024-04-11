@@ -18,7 +18,7 @@ export default function RecommendationsByAurelius() {
   ];
   return (
     <>
-      <div className="font-semibold text-[20px] mt-8 mb-6">
+      <div className="font-semibold text-[18px] mt-8 mb-6">
         Recommended by Aurelius
       </div>
       <div>

@@ -62,7 +62,7 @@ export default function MoreFromAuthor() {
   return (
     <>
       <div className="">
-        <p className="text-specialBlack text-[16px] font-bold my-8">
+        <p className="text-specialBlack text-[18px] font-semibold my-8">
           More from Ryan Fan and Corporate Underbelly
         </p>
         <div>

@@ -14,7 +14,7 @@ export default function AboutAuthor() {
     <>
       <div className="">
         <div className="flex justify-between mt-8 mb-5">
-          <div className="w-16 h-16">
+          <div className="w-16 h-16 sm:w-[72px] sm:h-[72px]">
             <RoundedImg src={data.authorImg}></RoundedImg>
           </div>
           <div className="flex gap-2 items-center">
@@ -29,8 +29,8 @@ export default function AboutAuthor() {
           </p>
         </div>
         <div>
-          <div className="text-[14px] text-specialBlack my-2">
-            {data.followers} Followers <span>.</span>
+          <div className="text-[14px] text-specialBlack my-2 ">
+            {data.followers} Followers <span className="sm:mx-2">.</span>
             <span className="text-specialGrey"> Writer for</span>{" "}
             <span className="text-specialBlack">Corporate Underbelly</span>
           </div>
