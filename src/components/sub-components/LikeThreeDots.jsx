@@ -4,7 +4,7 @@ import { GrBookmark } from "react-icons/gr";
 import { IoShareOutline } from "react-icons/io5";
 import { BsThreeDots } from "react-icons/bs";
 
-export default function LikeSection() {
+export default function LikeSection({ likes, comments }) {
   let data = {
     likes: "9.0K",
     comments: "139",
@@ -19,7 +19,7 @@ export default function LikeSection() {
               <PiHandsClappingLight />
             </div>
             <p className="text-specialGrey text-[13px] sm:text-[16px]">
-              {data.likes}
+              {likes}
             </p>
           </div>
           <div className="flex items-center gap-2">
@@ -27,7 +27,7 @@ export default function LikeSection() {
               <TfiComments />
             </div>
             <p className="text-specialGrey text-[13px] sm:text-[16px]">
-              {data.comments}
+              {comments}
             </p>
           </div>
         </div>
