@@ -9,6 +9,7 @@ import Userpage from "./pages/Userpage";
 import UserHome from "./components/sub-components/UserHome";
 import UserLists from "./components/sub-components/UserLists";
 import UserAbout from "./components/sub-components/UserAbout";
+import Homepage from "./pages/Homepage";
 
 function App() {
   return (
@@ -27,7 +28,8 @@ function App() {
     // </>
     <>
       <Routes>
-        <Route path="/" Component={Userpage} />
+        <Route path="/" Component={Homepage} />
+        {/* <Route path="/" Component={Userpage} /> */}
         {/* <Route path="user/home" Component={UserHome} />
         <Route path="user/lists" Component={UserLists} />
         <Route path="user/about" Component={UserAbout} /> */}

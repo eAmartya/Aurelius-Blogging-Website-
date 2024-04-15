@@ -20,3 +20,20 @@
 .noto {
   font-family: "Noto Serif Display", serif;
 }
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hiding scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.special-shadow-homepagetab-left {
+  box-shadow: 10px -1px 8px 1px rgb(255, 255, 255);
+}
+.special-shadow-homepagetab-right {
+  box-shadow: -10px -1px 8px 1px rgb(255, 255, 255);
+}
