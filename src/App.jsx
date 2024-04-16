@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Nav, Blog } from "./index";
 import FooterAuthorSection from "./components/sub-components/FooterAuthorSection";
 import RoundedImg from "./components/sub-components/RoundedImg";
@@ -10,6 +10,10 @@ import UserHome from "./components/sub-components/UserHome";
 import UserLists from "./components/sub-components/UserLists";
 import UserAbout from "./components/sub-components/UserAbout";
 import Homepage from "./pages/Homepage";
+import Write from "./pages/Write";
+import Preview from "./pages/Preview";
+import { DataProvider } from "./meta-files/DataContext.jsx";
+import BlogPage from "./pages/BlogPage.jsx";
 
 function App() {
   return (
@@ -27,13 +31,23 @@ function App() {
     //   {/* <section>Footer</section> */}
     // </>
     <>
-      <Routes>
-        <Route path="/" Component={Homepage} />
-        {/* <Route path="/" Component={Userpage} /> */}
-        {/* <Route path="user/home" Component={UserHome} />
+      <Router>
+        <DataProvider>
+          <Routes>
+            <Route path="/" Component={Write} />
+            <Route path="/preview" Component={Preview} />
+            <Route path="/blog" Component={BlogPage} />
+            {/* <Route path="/" Component={Homepage} /> */}
+            {/* <Route path="/" Component={Userpage} /> */}
+            {/* <Route path="user/home" Component={UserHome} />
         <Route path="user/lists" Component={UserLists} />
-        <Route path="user/about" Component={UserAbout} /> */}
-      </Routes>
+      <Route path="user/about" Component={UserAbout} /> */}
+          </Routes>
+        </DataProvider>
+      </Router>
+      {/* <DataProvider>
+        <Write></Write>
+      </DataProvider> */}
       {/* <div className="">
         <Userpage></Userpage>
       </div> */}

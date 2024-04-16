@@ -3,7 +3,7 @@ import Author from "./sub-components/Author";
 import Hero from "./sub-components/Hero";
 import LikeSection from "./sub-components/LikeSection";
 
-export default function Blog() {
+export default function Blog({}) {
   const [isMemberOnlyContent, setIsMemberOnlyContent] = useState(false);
   const data = {
     title: "The Untold Story Behind The Key Bridge Collapse in Baltimore",
